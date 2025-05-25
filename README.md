@@ -22,3 +22,8 @@ Then make sure change the sqs config in app.py
 q_url = 'https://sqs.<your-region>.amazonaws.com/<your-id>/<your-sqs-service-name>'
 region_name = '<your-region>'
 ```
+
+Run the app
+```
+streamlit run app.py
+```
