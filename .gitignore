@@ -3,3 +3,4 @@ test*.py
 rs*.txt
 admin.log
 venv/
+*_config.json
