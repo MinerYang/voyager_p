@@ -1,0 +1,24 @@
+# Developer Guide
+This repository is for print files from s3 interactivaly which generated from a chat service
+## perquisite
+pip install dependencies, could refer to requirement.txt
+```
+python3 -m venv venv
+source venv/bin/activate
+
+pip install streamlit
+pip install pycups
+pip install boto3
+```
+
+You also need set AWS crendential before receiveing sqs message either via env or config file.
+eg.
+```
+export AWS_ACCESS_KEY_ID='your key'
+export AWS_SECRET_ACCESS_KEY='your secret'
+```
+Then make sure change the sqs config in app.py
+```
+q_url = 'https://sqs.<your-region>.amazonaws.com/<your-id>/<your-sqs-service-name>'
+region_name = '<your-region>'
+```
